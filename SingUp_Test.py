@@ -5,6 +5,7 @@ from pages.user_page import UsersPage
 from selenium import webdriver
 
 
+
 # TC N#: Sing up for blog
 class SingUpTest(unittest.TestCase):
     

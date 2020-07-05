@@ -5,6 +5,7 @@ class UsersPage():
     CSS_SELECTOR = By.ID
     SUCCESS_BANNER = "flash_success"
 
+
     # Methods
     def __init__(self,browser):
         self.browser = browser

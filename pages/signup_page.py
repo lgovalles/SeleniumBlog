@@ -27,3 +27,4 @@ class SignupPage():
     def submit_form(self):
         submit_button = self.browser.find_element(self.CSS_SELECTOR,self.SUBMIT_BUTTON)
         submit_button.click()
+        

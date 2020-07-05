@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 
+
 class LoginPage():
     # Selectors 
     CSS_SELECTOR = By.NAME

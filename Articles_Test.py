@@ -3,6 +3,7 @@ from pages.articles_page import ArticlePage
 from pages.user_page import UsersPage
 from selenium import webdriver
 
+
 class ArticlesTest(unittest.TestCase):
     
     def setUp(self):
