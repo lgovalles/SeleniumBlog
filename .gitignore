@@ -1,3 +1,4 @@
 /.pytest_cache
 geckodriver.exe
+geckodriver.log
 Pipfile.lock
