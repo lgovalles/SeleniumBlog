@@ -3,10 +3,10 @@ from selenium.webdriver.common.by import By
 
 class LoginPage():
     # Selectors 
-    CSS_SELECTOR = By.NAME
-    EMAIL_FIELD = "session[email]"
-    PASSWORD_FIELD = "session[password]"
-    SUBMIT_BUTTON = "commit"
+    CSS_SELECTOR = By.CSS_SELECTOR
+    EMAIL_FIELD = "input[type='email']"
+    PASSWORD_FIELD = "input[type='password']"
+    SUBMIT_BUTTON = "input[type='submit']"
 
     # Methods 
     def __init__(self,browser):

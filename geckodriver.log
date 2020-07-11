@@ -1192,3 +1192,14 @@ console.error: Policies.jsm:
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1594433821076	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lovalles\\AppData\\Local\\Temp\\rust_mozprofilefgaXxC"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: Policies.jsm: 
+  Download failed - ERROR_SIGNEDSTATE_REQUIRED - file:///C:/Program%20Files%20(x86)/SysTrack/LsiAgent/Utilities/lsiwebhook@lakesidesoftware.com.xpi
+1594433831989	Marionette	INFO	Listening on port 59486
+1594433832181	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594433836301	Marionette	INFO	Stopped listening on port 59486
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
