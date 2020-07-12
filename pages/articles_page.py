@@ -1,4 +1,7 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
 
 
 class ArticlePage():
@@ -16,6 +19,8 @@ class ArticlePage():
     # Methods 
     def __init__(self,browser):
         self.browser = browser
+        # Define Explicit Waits for 5 sec
+        self.wait = WebDriverWait(self.browser,5)
 
     def enter_title(self,title):
         email_field = self.browser.find_element(self.CSS_SELECTOR, self.TITLE_FIELD)
@@ -30,9 +35,9 @@ class ArticlePage():
         submit_button.click()
     
     def delete_article(self):
-        delete_buttons = self.browser.find_elements(self.CSS_SELECTOR,self.DELETE_BUTTON)
-        delete_buttons[1].click()
+        delete_buttons = self.wait.until(EC.element_to_be_clickable((self.CSS_SELECTOR,self.DELETE_BUTTON)))
+        delete_buttons.click()
 
     def get_banner_text(self):
-        banner = self.browser.find_element(self.CSS_SELECTOR,self.SUCCESS_BANNER)
+        banner =  self.wait.until(EC.presence_of_element_located((self.CSS_SELECTOR,self.SUCCESS_BANNER)))
         return banner.text

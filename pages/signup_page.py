@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 class SignupPage():
     # selectors 
-    CSS_SELECTOR = By.ID
+    CSS_SELECTOR = By.CSS_SELECTOR
     USERNAME_FIELD = "user_username"
     EMAIL_FIELD = "user_email"
     PASSWORD_FIELD = "user_password"
