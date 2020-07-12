@@ -6,15 +6,12 @@ import time
 
 class ArticlePage():
     # Selectors 
-    CSS_SELECTOR = By.CSS_SELECTOR
-    # Selector of main page for Article
-    DELETE_BUTTON = "a[data-method='delete']"
-    # Selectors for Add New Article
-    TITLE_FIELD = "#article_title"
-    DESCRIPTION_FIELD = "#article_description"
-    SUBMIT_BUTTON = "input[name='commit']"
+    CSS_SELECTOR = By.XPATH
+    TITLE_FIELD = "//*[@id='article_title']"
+    DESCRIPTION_FIELD = "//*[@id='article_description']"
+    SUBMIT_BUTTON = "/html/body/div[2]/div/div/form/div[3]/div/input"
 
-    SUCCESS_BANNER = "#flash_success"
+    SUCCESS_BANNER = "//*[@id='flash_success']"
 
     # Methods 
     def __init__(self,browser):
@@ -33,10 +30,13 @@ class ArticlePage():
     def submit_form(self):
         submit_button = self.browser.find_element(self.CSS_SELECTOR,self.SUBMIT_BUTTON)
         submit_button.click()
+<<<<<<< HEAD
     
     def delete_article(self):
         delete_buttons = self.wait.until(EC.element_to_be_clickable((self.CSS_SELECTOR,self.DELETE_BUTTON)))
         delete_buttons.click()
+=======
+>>>>>>> parent of 2cfa1f8... Testing Delete Article
 
     def get_banner_text(self):
         banner =  self.wait.until(EC.presence_of_element_located((self.CSS_SELECTOR,self.SUCCESS_BANNER)))

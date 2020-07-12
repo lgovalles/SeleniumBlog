@@ -732,6 +732,7 @@ console.error: Policies.jsm:
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+<<<<<<< HEAD
 1594089889841	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lovalles\\AppData\\Local\\Temp\\rust_mozprofileNsJpcC"
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.error: Policies.jsm: 
@@ -1521,3 +1522,5 @@ console.error: Policies.jsm:
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+=======
+>>>>>>> parent of 2cfa1f8... Testing Delete Article
