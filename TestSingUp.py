@@ -7,8 +7,6 @@ from selenium import webdriver
 # TC N#: Sing up for blog
 class SingUpTest(unittest.TestCase):
     
-    timestamp = datetime.datetime.timestamp(datetime.datetime.now())
-
     def setUp(self):
         self.browser = webdriver.Firefox()
         # Go to signup form
@@ -29,7 +27,7 @@ class SingUpTest(unittest.TestCase):
         signup.submit_form()
         #Confirm user is signed up successfully
         banner = Message(self.browser)
-        banner_text = banner.get_banner_text()
+        banner_text = banner.get_banner_success_text()
         self.assertEqual(banner_text, assert_text)
 
     def tearDown(self):

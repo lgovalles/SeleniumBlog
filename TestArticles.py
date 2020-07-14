@@ -23,7 +23,7 @@ class ArticlesTest(unittest.TestCase):
         alert.accept()
         # Confirm article is delete successfully
         banner = Message(self.browser)
-        banner_text = banner.get_banner_text()
+        banner_text = banner.get_banner_success_text()
         self.assertEqual(banner_text, assert_text)
 
     def tearDown(self):

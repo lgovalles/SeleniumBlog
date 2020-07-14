@@ -11,8 +11,8 @@ class LoginTest(unittest.TestCase):
         # Go to signup form
         self.browser.get('https://selenium-blog.herokuapp.com/login')
         # Define varibles 
-        self.email = "nameT1593915406.935035@test.com"
-        self.password = "Secret"
+        self.email = "luisg@test.com"
+        self.password = "test123"
 
     def test_login(self):
         # Assert 
@@ -23,8 +23,8 @@ class LoginTest(unittest.TestCase):
         login.enter_password(self.password)
         login.submit_form()
         # Confirm user is log in successfully
-        users = UsersPage(self.browser)
-        banner_text = users.get_banner_text()
+        banner = Message(self.browser)
+        banner_text = banner.get_banner_success_text()
         self.assertEqual(banner_text, assert_text)
 
     def test_login_wrong(self):
@@ -37,7 +37,7 @@ class LoginTest(unittest.TestCase):
         login.submit_form()
         # Confirm user is log in successfully
         banner = Message(self.browser)
-        banner_text = banner.get_banner_text()
+        banner_text = banner.get_banner_danger_text()
         self.assertEqual(banner_text, assert_text)
 
     def tearDown(self):

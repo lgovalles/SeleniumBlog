@@ -23,7 +23,7 @@ class ArticlesTest(unittest.TestCase):
         form.submit_form()
         # Confirm user is log in successfully
         banner = Message(self.browser)
-        banner_text = banner.get_banner_text()
+        banner_text = banner.get_banner_success_text()
         self.assertEqual(banner_text, assert_text)
 
     def tearDown(self):
