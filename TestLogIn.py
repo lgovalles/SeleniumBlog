@@ -1,6 +1,6 @@
 import unittest
 from pages.loging_page import LoginPage
-from pages.user_page import UsersPage
+from pages.message import Message
 from selenium import webdriver
 
 # TC N#: Login for blog
@@ -25,6 +25,19 @@ class LoginTest(unittest.TestCase):
         # Confirm user is log in successfully
         users = UsersPage(self.browser)
         banner_text = users.get_banner_text()
+        self.assertEqual(banner_text, assert_text)
+
+    def test_login_wrong(self):
+        # Assert 
+        assert_text = "There was a problem logging in"
+        # Fill out and submit form
+        login = LoginPage(self.browser)
+        # login.enter_email(self.email)
+        # login.enter_password(self.password)
+        login.submit_form()
+        # Confirm user is log in successfully
+        banner = Message(self.browser)
+        banner_text = banner.get_banner_text()
         self.assertEqual(banner_text, assert_text)
 
     def tearDown(self):

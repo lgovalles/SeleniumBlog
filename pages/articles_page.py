@@ -1,8 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
-
 
 class ArticlePage():
     # Selectors 
@@ -13,8 +11,6 @@ class ArticlePage():
     TITLE_FIELD = "#article_title"
     DESCRIPTION_FIELD = "#article_description"
     SUBMIT_BUTTON = "input[type='submit']"
-    #  CSS Assert
-    SUCCESS_BANNER = "#flash_success"
 
     # Methods 
     def __init__(self,browser):
@@ -37,7 +33,3 @@ class ArticlePage():
     def delete_article(self):
         delete_buttons = self.wait.until(EC.element_to_be_clickable((self.CSS_SELECTOR,self.DELETE_BUTTON)))
         delete_buttons.click()
-
-    def get_banner_text(self):
-        banner =  self.wait.until(EC.presence_of_element_located((self.CSS_SELECTOR,self.SUCCESS_BANNER)))
-        return banner.text

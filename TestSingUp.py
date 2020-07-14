@@ -1,10 +1,8 @@
 import unittest
 import datetime
 from pages.signup_page import SignupPage
-from pages.user_page import UsersPage
+from pages.message import Message
 from selenium import webdriver
-
-
 
 # TC N#: Sing up for blog
 class SingUpTest(unittest.TestCase):
@@ -30,8 +28,8 @@ class SingUpTest(unittest.TestCase):
         signup.enter_password(self.password )
         signup.submit_form()
         #Confirm user is signed up successfully
-        users = UsersPage(self.browser)
-        banner_text = users.get_banner_text()
+        banner = Message(self.browser)
+        banner_text = banner.get_banner_text()
         self.assertEqual(banner_text, assert_text)
 
     def tearDown(self):

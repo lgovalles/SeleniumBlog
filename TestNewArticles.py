@@ -1,7 +1,7 @@
 import unittest
 from selenium import webdriver
 from pages.articles_page import ArticlePage
-from pages.user_page import UsersPage
+from pages.message import Message
 
 class ArticlesTest(unittest.TestCase):
     
@@ -22,7 +22,8 @@ class ArticlesTest(unittest.TestCase):
         form.enter_description(self.description)
         form.submit_form()
         # Confirm user is log in successfully
-        banner_text = form.get_banner_text()
+        banner = Message(self.browser)
+        banner_text = banner.get_banner_text()
         self.assertEqual(banner_text, assert_text)
 
     def tearDown(self):
