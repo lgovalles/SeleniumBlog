@@ -1,5 +1,4 @@
 import unittest
-import time
 from selenium import webdriver
 from pages.articles_page import ArticlePage
 from pages.user_page import UsersPage
@@ -22,7 +21,6 @@ class ArticlesTest(unittest.TestCase):
         article.delete_article()
         alert = self.browser.switch_to_alert()
         alert.accept()
-        #time.sleep(5)
         # Confirm article is delete successfully
         banner_text = article.get_banner_text()
         self.assertEqual(banner_text, assert_text)
