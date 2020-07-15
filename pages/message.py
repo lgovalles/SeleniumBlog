@@ -14,7 +14,7 @@ class Message():
     def __init__(self,browser):
         self.browser = browser
         # Define Explicit Waits for 5 sec
-        self.wait = WebDriverWait(self.browser,5)
+        self.wait = WebDriverWait(self.browser,10)
         
     def get_banner_success_text(self):
         banner =  self.wait.until(EC.presence_of_element_located((self.CSS_SELECTOR,self.SUCCESS_BANNER)))
