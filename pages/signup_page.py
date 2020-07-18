@@ -7,10 +7,15 @@ class SignupPage():
     EMAIL_FIELD = "#user_email"
     PASSWORD_FIELD = "#user_password"
     SUBMIT_BUTTON = "#submit"
+    HEADER_LABEL = "h1[align='center']"
 
     # Methods 
     def __init__(self,browser):
         self.browser = browser
+
+    def get_header(self):
+        header = self.browser.find_element(self.CSS_SELECTOR,self.HEADER_LABEL)
+        return header.text
 
     def enter_username(self,username):
         username_field = self.browser.find_element(self.CSS_SELECTOR, self.USERNAME_FIELD)

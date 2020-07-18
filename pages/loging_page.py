@@ -7,11 +7,16 @@ class LoginPage():
     EMAIL_FIELD = "input[type='email']"
     PASSWORD_FIELD = "input[type='password']"
     SUBMIT_BUTTON = "input[type='submit']"
+    HEADER_LABEL = "h1[align='center']"
 
     # Methods 
     def __init__(self,browser):
         self.browser = browser
     
+    def get_header(self):
+        header = self.browser.find_element(self.CSS_SELECTOR,self.HEADER_LABEL)
+        return header.text
+
     def enter_email(self,email):
         email_field = self.browser.find_element(self.CSS_SELECTOR, self.EMAIL_FIELD)
         email_field.send_keys(email)

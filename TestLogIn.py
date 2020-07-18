@@ -1,4 +1,5 @@
 import unittest
+import json
 from pages.loging_page import LoginPage
 from pages.message import Message
 from selenium import webdriver
@@ -7,12 +8,14 @@ from selenium import webdriver
 class LoginTest(unittest.TestCase):
 
     def setUp(self):
+        with open('data/user.json') as filejson:
+            userdata = json.load(filejson)
         self.browser = webdriver.Firefox()
         # Go to signup form
         self.browser.get('https://selenium-blog.herokuapp.com/login')
         # Define varibles 
-        self.email = "luisg@test.com"
-        self.password = "test123"
+        self.email = userdata['user']
+        self.password = userdata['password']
 
     def test_login(self):
         # Assert 
