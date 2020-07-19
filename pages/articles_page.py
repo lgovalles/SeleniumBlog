@@ -14,6 +14,7 @@ class ArticlePage():
     TITLE_FIELD = "#article_title"
     DESCRIPTION_FIELD = "#article_description"
     SUBMIT_BUTTON = "input[type='submit']"
+    CANCEL_LINK = "a[href='/articles']"
 
     # Methods 
     def __init__(self,browser):
@@ -48,5 +49,9 @@ class ArticlePage():
     def delete_article(self):
         delete_button = self.wait.until(EC.element_to_be_clickable((self.CSS_SELECTOR,self.DELETE_BUTTON)))
         delete_button.click()
+
+    def click_cancel(self):
+        cancel_link = self.wait.until(EC.element_to_be_clickable((self.CSS_SELECTOR,self.CANCEL_LINK)))
+        cancel_link.click()
     
     

@@ -3322,3 +3322,164 @@ console.error: Policies.jsm:
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1595123791476	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lovalles\\AppData\\Local\\Temp\\rust_mozprofilep7julp"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: Policies.jsm: 
+  Download failed - ERROR_SIGNEDSTATE_REQUIRED - file:///C:/Program%20Files%20(x86)/SysTrack/LsiAgent/Utilities/lsiwebhook@lakesidesoftware.com.xpi
+1595123796326	Marionette	INFO	Listening on port 52471
+1595123798939	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595123802494	Marionette	INFO	Stopped listening on port 52471
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1595123808431	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lovalles\\AppData\\Local\\Temp\\rust_mozprofileT6i3E1"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595123813436	Marionette	INFO	Listening on port 52519
+1595123813658	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595123818387	Marionette	INFO	Stopped listening on port 52519
+console.error: Policies.jsm: 
+  Download failed - ERROR_SIGNEDSTATE_REQUIRED - file:///C:/Program%20Files%20(x86)/SysTrack/LsiAgent/Utilities/lsiwebhook@lakesidesoftware.com.xpi
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1595123897340	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lovalles\\AppData\\Local\\Temp\\rust_mozprofilesODT3b"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: Policies.jsm: 
+  Download failed - ERROR_SIGNEDSTATE_REQUIRED - file:///C:/Program%20Files%20(x86)/SysTrack/LsiAgent/Utilities/lsiwebhook@lakesidesoftware.com.xpi
+1595123902150	Marionette	INFO	Listening on port 52631
+1595123902564	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595123911368	Marionette	INFO	Stopped listening on port 52631
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1595123916005	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lovalles\\AppData\\Local\\Temp\\rust_mozprofile5lllrw"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595123920645	Marionette	INFO	Listening on port 52685
+1595123920748	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Policies.jsm: 
+  Download failed - ERROR_SIGNEDSTATE_REQUIRED - file:///C:/Program%20Files%20(x86)/SysTrack/LsiAgent/Utilities/lsiwebhook@lakesidesoftware.com.xpi
+JavaScript error: chrome://marionette/content/proxy.js, line 222: TypeError: this.browser.driver.dialogObserver is null
+1595124049691	Marionette	INFO	Stopped listening on port 52685
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+failed - ERROR_SIGNEDSTATE_REQUIRED - file:///C:/Program%20Files%20(x86)/SysTrack/LsiAgent/Utilities/lsiwebhook@lakesidesoftware.com.xpi
+1595123940789	Marionette	INFO	Listening on port 52745
+1595123940899	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595123942989	Marionette	INFO	Stopped listening on port 52745
+console.error: services.settings: 
+  main/cfr Signature failed  TypeError: NetworkError when attempting to fetch resource.
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: resource:///actors/LightweightThemeChild.jsm, line 28: TypeError: this.docShell is null
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1595123948569	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lovalles\\AppData\\Local\\Temp\\rust_mozprofileqALvHl"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: Policies.jsm: 
+  Download failed - ERROR_SIGNEDSTATE_REQUIRED - file:///C:/Program%20Files%20(x86)/SysTrack/LsiAgent/Utilities/lsiwebhook@lakesidesoftware.com.xpi
+1595123954014	Marionette	INFO	Listening on port 52797
+1595123954453	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595123958430	Marionette	INFO	Stopped listening on port 52797
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+console.error: services.settings: 
+  main/cfr Signature failed  TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1595124030867	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lovalles\\AppData\\Local\\Temp\\rust_mozprofileenk56e"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595124036202	Marionette	INFO	Listening on port 52918
+1595124036619	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Policies.jsm: 
+  Download failed - ERROR_SIGNEDSTATE_REQUIRED - file:///C:/Program%20Files%20(x86)/SysTrack/LsiAgent/Utilities/lsiwebhook@lakesidesoftware.com.xpi
+1595124044605	Marionette	INFO	Stopped listening on port 52918
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1595124050603	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lovalles\\AppData\\Local\\Temp\\rust_mozprofileLk2Jk5"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595124058408	Marionette	INFO	Listening on port 52969
+1595124058751	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Policies.jsm: 
+  Download failed - ERROR_SIGNEDSTATE_REQUIRED - file:///C:/Program%20Files%20(x86)/SysTrack/LsiAgent/Utilities/lsiwebhook@lakesidesoftware.com.xpi
+1595124063425	Marionette	INFO	Stopped listening on port 52969
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1595124073377	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lovalles\\AppData\\Local\\Temp\\rust_mozprofileiPcJCK"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595124077883	Marionette	INFO	Listening on port 53026
+1595124078111	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Policies.jsm: 
+  Download failed - ERROR_SIGNEDSTATE_REQUIRED - file:///C:/Program%20Files%20(x86)/SysTrack/LsiAgent/Utilities/lsiwebhook@lakesidesoftware.com.xpi
+1595124086056	Marionette	INFO	Stopped listening on port 53026
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1595124090233	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lovalles\\AppData\\Local\\Temp\\rust_mozprofile3DJoP4"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595124094470	Marionette	INFO	Listening on port 53076
+1595124094523	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Policies.jsm: 
+  Download failed - ERROR_SIGNEDSTATE_REQUIRED - file:///C:/Program%20Files%20(x86)/SysTrack/LsiAgent/Utilities/lsiwebhook@lakesidesoftware.com.xpi
+1595124099170	Marionette	INFO	Stopped listening on port 53076
+console.error: services.settings: 
+  main/cfr-fxa Signature failed  TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
