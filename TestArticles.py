@@ -1,5 +1,6 @@
 import unittest
 import time
+import json
 from selenium import webdriver
 from pages.articles_page import ArticlePage
 from pages.message import Message
@@ -7,12 +8,16 @@ from pages.message import Message
 class ArticlesTest(unittest.TestCase):
     
     def setUp(self):
+        # Read the data from the json file 
+        with open('data/articles.json') as jsonfile:
+            articledate = json.load(jsonfile)
+
         self.browser = webdriver.Firefox()
         # Go to signup form
         self.browser.get('https://selenium-blog.herokuapp.com/articles')
         # Define varibles 
-        self.title = "Test Article"
-        self.description = "Rand Text"
+        self.title = articledate['title']
+        self.description = articledate['description']
 
     def test_article_delete(self):
         # Assert

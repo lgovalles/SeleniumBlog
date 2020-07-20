@@ -8,8 +8,10 @@ from selenium import webdriver
 class LoginTest(unittest.TestCase):
 
     def setUp(self):
+        # Read the data from the json file 
         with open('data/user.json') as filejson:
             userdata = json.load(filejson)
+            
         self.browser = webdriver.Firefox()
         # Go to signup form
         self.browser.get('https://selenium-blog.herokuapp.com/login')
