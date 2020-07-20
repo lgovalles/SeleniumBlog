@@ -6,6 +6,8 @@ from selenium import webdriver
 
 # TC N#: Sing up for blog
 class SingUpTest(unittest.TestCase):
+
+    timestamp = datetime.datetime.timestamp(datetime.datetime.now())
     
     def setUp(self):
         self.browser = webdriver.Firefox()

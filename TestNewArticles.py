@@ -4,7 +4,7 @@ from selenium import webdriver
 from pages.articles_page import ArticlePage
 from pages.message import Message
 
-class ArticlesTest(unittest.TestCase):
+class NewArticlesTest(unittest.TestCase):
     
     def setUp(self):
         self.browser = webdriver.Firefox()

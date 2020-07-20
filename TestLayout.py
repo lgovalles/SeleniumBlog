@@ -6,7 +6,7 @@ from pages.signup_page import SignupPage
 from selenium import webdriver
 
 # TC N#: Login for blog
-class LoginTest(unittest.TestCase):
+class LayoutTest(unittest.TestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()

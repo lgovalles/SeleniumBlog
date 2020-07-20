@@ -1,5 +1,6 @@
 import unittest
 import json
+import time
 from pages.loging_page import LoginPage
 from pages.message import Message
 from selenium import webdriver
@@ -28,6 +29,7 @@ class LoginTest(unittest.TestCase):
         login.enter_password(self.password)
         login.submit_form()
         # Confirm user is log in successfully
+        time.sleep(5)
         banner = Message(self.browser)
         banner_text = banner.get_banner_success_text()
         self.assertEqual(banner_text, assert_text)
@@ -37,10 +39,9 @@ class LoginTest(unittest.TestCase):
         assert_text = "There was a problem logging in"
         # Fill out and submit form
         login = LoginPage(self.browser)
-        # login.enter_email(self.email)
-        # login.enter_password(self.password)
         login.submit_form()
-        # Confirm user is log in successfully
+        # Confirm user is not log in
+        time.sleep(5)
         banner = Message(self.browser)
         banner_text = banner.get_banner_danger_text()
         self.assertEqual(banner_text, assert_text)
